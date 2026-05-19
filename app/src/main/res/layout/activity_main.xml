@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1a1a1a"
+    android:gravity="center_horizontal">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JoKenPô"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Placar -->
+    <TextView
+        android:id="@+id/txtPlacar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogador: 0 - App: 0"
+        android:textSize="18sp"
+        android:textColor="#FFD700"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="#333333"
+        android:padding="12dp" />
+
+    <!-- Texto de orientação -->
+    <TextView
+        android:id="@+id/tvOrientacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O App escolheu..."
+        android:textSize="14sp"
+        android:textColor="#cccccc"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageView para mostrar a escolha do app -->
+
+    <!-- Texto de resultado -->
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: ???"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:background="#2d2d2d"
+        android:padding="16dp" />
+
+    <!-- Texto de instrução -->
+    <TextView
+        android:id="@+id/tvInstrucao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a sua jogada"
+        android:textSize="14sp"
+        android:textColor="#cccccc"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Container para os botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:spacing="12dp">
+
+        <!-- Botão Pedra -->
+
+        <!-- Botão Papel -->
+
+        <!-- Botão Tesoura -->
+
+        <ImageView
+            android:id="@+id/btnPapel"
+            android:layout_width="120sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/papel" />
+
+        <ImageView
+            android:id="@+id/btnPedra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/pedra" />
+
+        <ImageView
+            android:id="@+id/btnTesoura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/tesoura" />
+
+    </LinearLayout>
+
+    <!-- Botão Reiniciar -->
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:background="#FF6B6B"
+        android:textColor="#ffffff"
+        android:onClick="reiniciarJogo" />
+
+</LinearLayout>
